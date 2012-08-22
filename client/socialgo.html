@@ -1,0 +1,19 @@
+<head>
+  <title>socialgo</title>
+</head>
+
+<body>
+  {{> pages}}
+
+  <!-- This is a hack -->
+  {{> gamepage}}
+</body>
+
+<template name="pages">
+  {{#if show_frontpage}}
+    {{> frontpage}}
+  {{/if}}
+
+  <!-- This is a hack -->
+  {{show_gamepage}}
+</template>

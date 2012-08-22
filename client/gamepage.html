@@ -1,0 +1,12 @@
+<template name="gamepage">
+  <div id="gamepage">
+    <div class="container">
+      {{> header}}
+      <div class="jgo_board" id="board"></div>
+    </div>
+  </div>
+</template>
+
+<template name="header">
+  <h1>Your color is {{our_color}}!{{#if is_turn}} It is your turn!{{/if}}</h1>
+</template>
