@@ -59,4 +59,8 @@ Meteor.startup ->
 					board.set(coordinate, JGO_BLACK)
 				else
 					board.set(coordinate, JGO_CLEAR)
+					if game.next is 'white' and player.color is 'white'
+						board.mark(coordinate, '>')
+					else if game.next is 'black' and player.color is 'black'
+						board.mark(coordinate, '<')
 
